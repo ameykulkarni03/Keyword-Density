@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Keyword Density Tool</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <center>
+            <h1>Keyword Density Tool</h1>
+        </center>
+        
+        <div class="input-container">
+            
+            <textarea id="textInput"></textarea>
+            <button id="analyzeButton">Analyze</button>
+        </div>
+
+        <div id="results" style="display: none;">
+            <h2>Results</h2>
+            <table id="resultTableOne">
+                <caption>One Word Phrase Combinations</caption>
+                <thead>
+                    <tr>
+                        <th>Phrase</th>
+                        <th>Frequency</th>
+                        <th>Density (%)</th>
+                    </tr>
+                </thead>
+                <tbody id="resultBodyOne"></tbody>
+            </table>
+            <table id="resultTableTwo">
+                <caption>Two Word Phrase Combinations</caption>
+                <thead>
+                    <tr>
+                        <th>Phrase</th>
+                        <th>Frequency</th>
+                        <th>Density (%)</th>
+                    </tr>
+                </thead>
+                <tbody id="resultBodyTwo"></tbody>
+            </table>
+            <table id="resultTableThree">
+                <caption>Three Word Phrase Combinations</caption>
+                <thead>
+                    <tr>
+                        <th>Phrase</th>
+                        <th>Frequency</th>
+                        <th>Density (%)</th>
+                    </tr>
+                </thead>
+                <tbody id="resultBodyThree"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
